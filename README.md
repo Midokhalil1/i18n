@@ -1,4 +1,11 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App -->
+
+ # Translated with React App TRY IT OUT
+English 🇺🇸 Arabic🇦🇪🇸🇦🇪🇬 Spanish 🇲🇽🇪🇸🇵🇷 French🇫🇷🗼🇭🇹
+
+Languages Include ⬆️
+##
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
