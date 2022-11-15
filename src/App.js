@@ -1,20 +1,31 @@
-import { useState } from 'react'
+import { useState, createContext } from 'react'
+import Details from './components/Details'
 import English from './lang/en.json'
 import Spanish from './lang/es.json'
+import Arabic from './lang/ab.json'
 import './App.css'
 
 const locale = navigator.language || 'en';
 
-const _lang = (locale==='es') ? Spanish : English;
+const _lang = (locale==='es')
+ ? Spanish 
+ :(locale==='ab') 
+ ? Arabic
+ :English;
+
+ export const LanguageContext = createContext()
 
 function App() {
   const [lang, setLang] = useState(_lang)
   return (
+    <LanguageContext.Provider value={{ lang }}>
     <div className="App">
       <header className="App-header">
         <div>
+        
           <button onClick={() => setLang(English)}>EN</button>
           <button onClick={() => setLang(Spanish)}>ES</button>
+          <button onClick={() => setLang(Arabic)}>AB</button>
         </div>
         <h1>{lang["app.header"]}</h1>
         <p>{lang["app.subhead"]}</p>
@@ -26,8 +37,10 @@ function App() {
         >
           {lang["app.cta"]}
         </a>
+        <Details />
       </header>
     </div>
+    </LanguageContext.Provider>
   );
 }
 

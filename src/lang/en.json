@@ -1,5 +1,7 @@
 {
     "app.header": "Welcome to Boca code",
     "app.subhead": "Become certified software engineer in 10 weeks ",
-    "app.cta": "apply now"
+    "app.cta": "apply now",
+    "details.header": "Program out Line ",
+    "details.text": "This course will teach you all of the hard and soft skills to have successful career in tech"
 }
