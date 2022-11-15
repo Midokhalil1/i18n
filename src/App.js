@@ -23,9 +23,9 @@ function App() {
       <header className="App-header">
         <div>
         
-          <button onClick={() => setLang(English)}>EN</button>
-          <button onClick={() => setLang(Spanish)}>ES</button>
-          <button onClick={() => setLang(Arabic)}>AB</button>
+          <button onClick={() => setLang(English)}>🇺🇸EN</button>
+          <button onClick={() => setLang(Spanish)}>🇪🇸ES</button>
+          <button onClick={() => setLang(Arabic)}>🇪🇬AB</button>
         </div>
         <h1>{lang["app.header"]}</h1>
         <p>{lang["app.subhead"]}</p>
